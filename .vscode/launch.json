@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "debug game",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/nave.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
