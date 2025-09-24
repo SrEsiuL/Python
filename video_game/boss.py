@@ -58,7 +58,7 @@ class ProyectilBoss(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
         self.image = pygame.Surface((15, 8))
-        self.image.fill((BLANCO))  # Proyectil rojo claro
+        self.image.fill((BLANCO))
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y

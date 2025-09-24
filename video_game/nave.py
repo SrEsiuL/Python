@@ -216,6 +216,17 @@ class Juego:
             self.spawn_enemigos_durante_juego(1)
             if self.jugador.vida <= 0:
                 self.correr = False
+
+        # ✅ COLISIONES JUGADOR <> BOSS (si decides implementarlo)
+        hits = pygame.sprite.spritecollide(self.jugador, self.boss_list, False)
+        if hits:
+            boss = hits[0]
+            # Explosión en el BOSS, no en el jugador
+            explosion = Explosion(self.jugador.rect.centerx, self.jugador.rect.centery)
+            self.explosion_list.add(explosion)
+            self.all_sprite_list.add(explosion)
+            
+            self.jugador.vida -= 2  # Más daño del boss
     
     def dibujar(self):
         self.ventana.fill(VERDE)
