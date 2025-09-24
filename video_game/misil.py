@@ -10,6 +10,7 @@ class Misil(pygame.sprite.Sprite):
         self.rect.y = y
         self.rect.centerx = x
         self.speedy = 5
+        self.dano = 1
         
     def update(self):
         self.rect.x += self.speedy
