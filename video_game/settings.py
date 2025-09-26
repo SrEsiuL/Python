@@ -3,4 +3,6 @@ V_ALTURA = 450
 NEGRO = (0, 0, 0)
 BLANCO = (255, 255, 255)
 VERDE = (98, 186, 72)
+GRIS = (200, 200, 200)
 FPS = 60
+FUENTE = "archivos/font/VCR_OSD_Mono.ttf"
